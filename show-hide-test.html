@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>show_hide</title>
+    </head>
+    <body style="position: relative;">
+        <div id="div-1" style="width: fit-content;">
+            <div>
+                <p id="opt-1">Option 1</p>
+            </div>
+            <div>
+                <p>Option 2</p>
+            </div>
+            <div>Option 3</div>
+        </div>
+        <div id="div-2" style="display: none;">
+            <div>
+                <p id="opt-4">Option 4</p>
+            </div>
+            <div>
+                <p>Option 5</p>
+            </div>
+            <div>
+                <p>Option 6</p>
+            </div>
+        </div>
+        <div id="div-3" style="display: none;">
+            <div>
+                <p>Option 7</p>
+            </div>
+            <div>
+                <p>Option 8</p>
+            </div>
+            <div>
+                <p>Option 9</p>
+            </div>
+        </div>
+        <script>
+            (document.getElementById("opt-1")).addEventListener("mouseover", (e) =>{
+                document.getElementById("div-2").style.display = "block";
+            });
+            (document.getElementById("opt-4")).addEventListener("mouseover", (e) =>{
+                document.getElementById("div-3").style.display = "block";
+            });
+        </script>
+    </body>
+</html>
